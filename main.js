@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://wallup.net/wp-content/uploads/2016/01/89275-space-stars-artwork.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('adarsh.jfif');
+const jeffTexture = new THREE.TextureLoader().load('https://media-exp1.licdn.com/dms/image/C4D03AQFtaUVxmyZrUQ/profile-displayphoto-shrink_800_800/0/1621405303723?e=1649894400&v=beta&t=KYA42NtsKkDf0vk65dqFbmpG7ZobtrBd1FRP7bNJ_7o');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -73,7 +73,7 @@ scene.add(jeff);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('code.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://media.istockphoto.com/photos/binary-code-background-picture-id1046046242');
 const normalTexture = new THREE.TextureLoader().load('normal.jpg');
 
 const moon = new THREE.Mesh(
